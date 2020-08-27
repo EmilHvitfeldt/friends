@@ -1,0 +1,52 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# friends
+
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+<!-- badges: end -->
+
+The goal of friends to provide the complete script transcription of the [Friends](https://en.wikipedia.org/wiki/Friends) sitcom. The data originates from the [Character Mining](https://github.com/emorynlp/character-mining) repository which includes references to scientific explorations using this data. This package simply provides the data in tibble format instead of json files.
+
+## Installation
+
+You can install the developmental version of friends from [Github](http://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("EmilHvitfeldt/friends")
+```
+
+## Example
+
+The friends package comes with a couple of datasets. The main one is the `friends` dataset which is a tibble containing all the utterances in the show
+
+```{r example}
+library(friends)
+
+friends
+```
+
+All the utterances are broken down by `season`, `episode`, `scene` and `utterance` which allows for very detailed analysis. Please note that the `speaker` will be denoted `"Scene Directions"` to show scene directions, or otherwise non-spoken descriptions.
+
+The original data includes emotion and character entity annotation for some of the utterances. These annotations have been included in separate tibbles. These can easily be joined back to the main dataset as needed.
+
+```{r}
+friends_entities
+
+friends_emotions
+```
+
