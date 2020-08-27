@@ -35,3 +35,21 @@
 #' \code{season}, \code{episode}, \code{scene}, \code{utterance} and
 #' \code{entities}.
 "friends_emotions"
+
+#' Episode Information
+#'
+#' This [tibble][tibble::tibble-package] contains additional information about
+#' each of the episodes. Information was sourced from Wikipedia and IMDb on
+#' August 26th, 2020.
+#'
+#' @source \url{https://en.wikipedia.org/wiki/Friends}
+#' @source \url{https://www.imdb.com/title/tt0108778/}
+#'
+#' @format A [tibble][tibble::tibble-package] with 236 rows and 8 variables:
+#' \code{season}, \code{episode}, \code{title}, \code{directed_by},
+#' \code{written_by}, \code{air_date}, \code{us_views_millions} and
+#' \code{imdb_rating}.
+"friends_info"
+
+
+

@@ -51,6 +51,12 @@ friends_entities
 friends_emotions
 ```
 
+There is also a tibble containing episode specific information such as `title`, `air_date` and `imdb_rating`
+
+```{r}
+friends_info
+```
+
 ## Code of Conduct
 
 Please note that the friends project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
