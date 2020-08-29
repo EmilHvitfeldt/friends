@@ -89,7 +89,7 @@
 <span class="no">friends</span>
 <span class="co">#&gt; # A tibble: 67,373 x 6</span>
 <span class="co">#&gt;    text                                speaker    season episode scene utterance</span>
-<span class="co">#&gt;    &lt;chr&gt;                               &lt;chr&gt;       &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;</span>
+<span class="co">#&gt;    &lt;chr&gt;                               &lt;chr&gt;       &lt;int&gt;   &lt;int&gt; &lt;int&gt;     &lt;int&gt;</span>
 <span class="co">#&gt;  1 There's nothing to tell! He's just… Monica Ge…      1       1     1         1</span>
 <span class="co">#&gt;  2 C'mon, you're going out with the g… Joey Trib…      1       1     1         2</span>
 <span class="co">#&gt;  3 All right Joey, be nice. So does h… Chandler …      1       1     1         3</span>
@@ -106,7 +106,7 @@
 <div class="sourceCode" id="cb3"><pre class="r"><span class="no">friends_entities</span>
 <span class="co">#&gt; # A tibble: 10,557 x 5</span>
 <span class="co">#&gt;    season episode scene utterance entities </span>
-<span class="co">#&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;list&gt;   </span>
+<span class="co">#&gt;     &lt;int&gt;   &lt;int&gt; &lt;int&gt;     &lt;int&gt; &lt;list&gt;   </span>
 <span class="co">#&gt;  1      1       1     1         2 &lt;chr [1]&gt;</span>
 <span class="co">#&gt;  2      1       1     1         3 &lt;chr [2]&gt;</span>
 <span class="co">#&gt;  3      1       1     1         4 &lt;chr [1]&gt;</span>
@@ -122,7 +122,7 @@
 <span class="no">friends_emotions</span>
 <span class="co">#&gt; # A tibble: 12,606 x 5</span>
 <span class="co">#&gt;    season episode scene utterance emotion</span>
-<span class="co">#&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;  </span>
+<span class="co">#&gt;     &lt;int&gt;   &lt;int&gt; &lt;int&gt;     &lt;int&gt; &lt;chr&gt;  </span>
 <span class="co">#&gt;  1      1       1     4         1 Mad    </span>
 <span class="co">#&gt;  2      1       1     4         3 Neutral</span>
 <span class="co">#&gt;  3      1       1     4         4 Joyful </span>
@@ -138,7 +138,7 @@
 <div class="sourceCode" id="cb4"><pre class="r"><span class="no">friends_info</span>
 <span class="co">#&gt; # A tibble: 236 x 8</span>
 <span class="co">#&gt;    season episode title directed_by written_by air_date   us_views_millio…</span>
-<span class="co">#&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;       &lt;chr&gt;      &lt;date&gt;                &lt;dbl&gt;</span>
+<span class="co">#&gt;     &lt;int&gt;   &lt;int&gt; &lt;chr&gt; &lt;chr&gt;       &lt;chr&gt;      &lt;date&gt;                &lt;dbl&gt;</span>
 <span class="co">#&gt;  1      1       1 The … James Burr… David Cra… 1994-09-22             21.5</span>
 <span class="co">#&gt;  2      1       2 The … James Burr… David Cra… 1994-09-29             20.2</span>
 <span class="co">#&gt;  3      1       3 The … James Burr… Jeffrey A… 1994-10-06             19.5</span>
@@ -193,7 +193,7 @@
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://github.com/EmilHvitfeldt/friends/actions"><img src="https://github.com/EmilHvitfeldt/friends/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
-<li><a href="https://www.tidyverse.org/lifecycle/#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
+<li><a href="https://www.tidyverse.org/lifecycle/#stable"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a></li>
 </ul>
 </div>
 </div>
