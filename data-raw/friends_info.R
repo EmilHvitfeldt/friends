@@ -2,6 +2,7 @@
 
 library(tidyverse)
 library(rvest)
+library(glue)
 
 wikitable_raw <- read_html("https://en.wikipedia.org/wiki/List_of_Friends_episodes") %>%
   html_nodes('table[class="wikitable plainrowheaders wikiepisodetable"]') %>%
@@ -37,7 +38,9 @@ imdb_rating <- function(x) {
          imdb_rating = rating)
 }
 
-imdb_ratings <- map_dfr(seq_len(10), imdb_rating) %>%
+imdb_ratings <- map_dfr(seq_len(10), imdb_rating)
+
+imdb_ratings <- imdb_ratings %>%
   add_row(season = 10,
           episode = 18,
           imdb_rating = tail(imdb_ratings$imdb_rating, 1))
@@ -52,7 +55,7 @@ friends_info <- wikitable_raw %>%
          us_views_millions = str_remove(us_views_millions, "\\[.*"),
          us_views_millions = as.numeric(us_views_millions)) %>%
   select(season, everything()) %>%
-  left_join(imdb_ratings, by = c("season", "episode"))
-
+  left_join(imdb_ratings, by = c("season", "episode")) %>%
+  mutate(across(season:episode, as.integer))
 
 usethis::use_data(friends_info, overwrite = TRUE)

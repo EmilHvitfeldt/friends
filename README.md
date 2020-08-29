@@ -40,7 +40,7 @@ library(friends)
 friends
 #> # A tibble: 67,373 x 6
 #>    text                                speaker    season episode scene utterance
-#>    <chr>                               <chr>       <dbl>   <dbl> <dbl>     <dbl>
+#>    <chr>                               <chr>       <int>   <int> <int>     <int>
 #>  1 There's nothing to tell! He's just… Monica Ge…      1       1     1         1
 #>  2 C'mon, you're going out with the g… Joey Trib…      1       1     1         2
 #>  3 All right Joey, be nice. So does h… Chandler …      1       1     1         3
@@ -67,7 +67,7 @@ tibbles. These can easily be joined back to the main dataset as needed.
 friends_entities
 #> # A tibble: 10,557 x 5
 #>    season episode scene utterance entities 
-#>     <dbl>   <dbl> <dbl>     <dbl> <list>   
+#>     <int>   <int> <int>     <int> <list>   
 #>  1      1       1     1         2 <chr [1]>
 #>  2      1       1     1         3 <chr [2]>
 #>  3      1       1     1         4 <chr [1]>
@@ -83,7 +83,7 @@ friends_entities
 friends_emotions
 #> # A tibble: 12,606 x 5
 #>    season episode scene utterance emotion
-#>     <dbl>   <dbl> <dbl>     <dbl> <chr>  
+#>     <int>   <int> <int>     <int> <chr>  
 #>  1      1       1     4         1 Mad    
 #>  2      1       1     4         3 Neutral
 #>  3      1       1     4         4 Joyful 
@@ -104,7 +104,7 @@ There is also a tibble containing episode specific information such as
 friends_info
 #> # A tibble: 236 x 8
 #>    season episode title directed_by written_by air_date   us_views_millio…
-#>     <dbl>   <dbl> <chr> <chr>       <chr>      <date>                <dbl>
+#>     <int>   <int> <chr> <chr>       <chr>      <date>                <dbl>
 #>  1      1       1 The … James Burr… David Cra… 1994-09-22             21.5
 #>  2      1       2 The … James Burr… David Cra… 1994-09-29             20.2
 #>  3      1       3 The … James Burr… Jeffrey A… 1994-10-06             19.5

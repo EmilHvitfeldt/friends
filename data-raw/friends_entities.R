@@ -36,6 +36,7 @@ friends_raw <- read_friends()
 friends_entities <- friends_raw %>%
   filter(0 < lengths(entities)) %>%
   separate(id, c("season", "episode", "scene", "utterance")) %>%
-  mutate(across(c("season", "episode", "scene", "utterance"), parse_number))
+  mutate(across(c("season", "episode", "scene", "utterance"), parse_number)) %>%
+  mutate(across(season:utterance, as.integer))
 
 usethis::use_data(friends_entities, overwrite = TRUE)

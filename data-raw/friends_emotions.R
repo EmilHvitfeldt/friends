@@ -39,6 +39,7 @@ friends_raw <- read_friends()
 friends_emotions <- friends_raw %>%
   filter(!is.na(emotion)) %>%
   separate(id, c("season", "episode", "scene", "utterance")) %>%
-  mutate(across(c("season", "episode", "scene", "utterance"), parse_number))
+  mutate(across(c("season", "episode", "scene", "utterance"), parse_number)) %>%
+  mutate(across(season:utterance, as.integer))
 
 usethis::use_data(friends_emotions, overwrite = TRUE)

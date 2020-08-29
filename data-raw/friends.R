@@ -50,6 +50,7 @@ friends <- friends_raw %>%
          text = if_else(nchar(text) == 0, transcript_with_note, text)) %>%
   separate(id, c("season", "episode", "scene", "utterance")) %>%
   mutate(across(c("season", "episode", "scene", "utterance"), parse_number)) %>%
+  mutate(across(c("season", "episode", "scene", "utterance"), as.integer)) %>%
   select(-transcript_with_note) %>%
   select(text, speaker, season, episode, scene, utterance)
 
