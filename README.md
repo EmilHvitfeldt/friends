@@ -8,7 +8,7 @@
 [![R build
 status](https://github.com/EmilHvitfeldt/friends/workflows/R-CMD-check/badge.svg)](https://github.com/EmilHvitfeldt/friends/actions)
 [![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 <!-- badges: end -->
 
 The goal of friends to provide the complete script transcription of the
