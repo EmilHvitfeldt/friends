@@ -1,6 +1,6 @@
 Package: friends
 Title: The Entire Transcript from Friends in Tidy Format
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     person(given = "Emil",
            family = "Hvitfeldt",
@@ -8,7 +8,8 @@ Authors@R:
            email = "emilhhvitfeldt@gmail.com",
            comment = c(ORCID = "0000-0002-0679-1945"))
 Description: The complete scripts from the American sitcom Friends in tibble 
-    format.
+    format. Use this package to practice data wrangling, text analysis and 
+    network analysis.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

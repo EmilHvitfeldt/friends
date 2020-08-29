@@ -59,3 +59,4 @@ friends_info <- wikitable_raw %>%
   mutate(across(season:episode, as.integer))
 
 usethis::use_data(friends_info, overwrite = TRUE)
+

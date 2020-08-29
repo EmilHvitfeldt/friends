@@ -21,7 +21,7 @@ package simply provides the data in tibble format instead of json files.
 ## Installation
 
 You can install the developmental version of friends from
-[Github](http://github.com/) with:
+[Github](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")

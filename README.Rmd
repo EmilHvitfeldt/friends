@@ -24,7 +24,7 @@ The goal of friends to provide the complete script transcription of the [Friends
 
 ## Installation
 
-You can install the developmental version of friends from [Github](http://github.com/) with:
+You can install the developmental version of friends from [Github](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
