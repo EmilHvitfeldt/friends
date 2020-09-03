@@ -7,6 +7,9 @@
 
 [![R build
 status](https://github.com/EmilHvitfeldt/friends/workflows/R-CMD-check/badge.svg)](https://github.com/EmilHvitfeldt/friends/actions)
+[![CRAN
+status](http://www.r-pkg.org/badges/version/friends)](https://CRAN.R-project.org/package=friends)
+[![Downloads](http://cranlogs.r-pkg.org/badges/friends)](https://CRAN.R-project.org/package=friends)
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 <!-- badges: end -->
@@ -20,8 +23,14 @@ package simply provides the data in tibble format instead of json files.
 
 ## Installation
 
-You can install the developmental version of friends from
-[Github](https://github.com/) with:
+You can install the released version of friends from
+[CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("friends")
+```
+
+And the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
