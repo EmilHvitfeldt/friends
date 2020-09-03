@@ -33,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">friends</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0.9000</span>
       </span>
     </div>
 
@@ -80,15 +80,17 @@
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p>You can install the developmental version of friends from <a href="https://github.com/">Github</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="r"><span class="co"># install.packages("devtools")</span>
+<p>You can install the released version of friends from <a href="https://CRAN.R-project.org">CRAN</a> with:</p>
+<div class="sourceCode" id="cb1"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"friends"</span>)</pre></div>
+<p>And the development version from <a href="https://github.com/">GitHub</a> with:</p>
+<div class="sourceCode" id="cb2"><pre class="r"><span class="co"># install.packages("devtools")</span>
 <span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu">install_github</span>(<span class="st">"EmilHvitfeldt/friends"</span>)</pre></div>
 </div>
 <div id="example" class="section level2">
 <h2 class="hasAnchor">
 <a href="#example" class="anchor"></a>Example</h2>
 <p>The friends package comes with a couple of datasets. The main one is the <code>friends</code> dataset which is a tibble containing all the utterances in the show</p>
-<div class="sourceCode" id="cb2"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">friends</span>)
+<div class="sourceCode" id="cb3"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">friends</span>)
 
 <span class="no">friends</span>
 <span class="co">#&gt; # A tibble: 67,373 x 6</span>
@@ -107,7 +109,7 @@
 <span class="co">#&gt; # … with 67,363 more rows</span></pre></div>
 <p>All the utterances are broken down by <code>season</code>, <code>episode</code>, <code>scene</code> and <code>utterance</code> which allows for very detailed analysis. Please note that the <code>speaker</code> will be denoted <code>"Scene Directions"</code> to show scene directions, or otherwise non-spoken descriptions.</p>
 <p>The original data includes emotion and character entity annotation for some of the utterances. These annotations have been included in separate tibbles. These can easily be joined back to the main dataset as needed.</p>
-<div class="sourceCode" id="cb3"><pre class="r"><span class="no">friends_entities</span>
+<div class="sourceCode" id="cb4"><pre class="r"><span class="no">friends_entities</span>
 <span class="co">#&gt; # A tibble: 10,557 x 5</span>
 <span class="co">#&gt;    season episode scene utterance entities </span>
 <span class="co">#&gt;     &lt;int&gt;   &lt;int&gt; &lt;int&gt;     &lt;int&gt; &lt;list&gt;   </span>
@@ -139,7 +141,7 @@
 <span class="co">#&gt; 10      1       1     4        12 Sad    </span>
 <span class="co">#&gt; # … with 12,596 more rows</span></pre></div>
 <p>There is also a tibble containing episode specific information such as <code>title</code>, <code>air_date</code> and <code>imdb_rating</code></p>
-<div class="sourceCode" id="cb4"><pre class="r"><span class="no">friends_info</span>
+<div class="sourceCode" id="cb5"><pre class="r"><span class="no">friends_info</span>
 <span class="co">#&gt; # A tibble: 236 x 8</span>
 <span class="co">#&gt;    season episode title directed_by written_by air_date   us_views_millio…</span>
 <span class="co">#&gt;     &lt;int&gt;   &lt;int&gt; &lt;chr&gt; &lt;chr&gt;       &lt;chr&gt;      &lt;date&gt;                &lt;dbl&gt;</span>
@@ -199,6 +201,8 @@
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://github.com/EmilHvitfeldt/friends/actions"><img src="https://github.com/EmilHvitfeldt/friends/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
+<li><a href="https://CRAN.R-project.org/package=friends"><img src="http://www.r-pkg.org/badges/version/friends" alt="CRAN status"></a></li>
+<li><a href="https://CRAN.R-project.org/package=friends"><img src="http://cranlogs.r-pkg.org/badges/friends" alt="Downloads"></a></li>
 <li><a href="https://www.tidyverse.org/lifecycle/#stable"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a></li>
 </ul>
 </div>
