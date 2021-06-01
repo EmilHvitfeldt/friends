@@ -5,8 +5,7 @@
 
 <!-- badges: start -->
 
-[![R build
-status](https://github.com/EmilHvitfeldt/friends/workflows/R-CMD-check/badge.svg)](https://github.com/EmilHvitfeldt/friends/actions)
+[![R-CMD-check](https://github.com/EmilHvitfeldt/friends/workflows/R-CMD-check/badge.svg)](https://github.com/EmilHvitfeldt/friends/actions)
 [![CRAN
 status](http://www.r-pkg.org/badges/version/friends)](https://CRAN.R-project.org/package=friends)
 [![Downloads](http://cranlogs.r-pkg.org/badges/friends)](https://CRAN.R-project.org/package=friends)
