@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# friends
+# friends <img src='man/figures/logo.png' align="right" height="139" />
 
 <!-- badges: start -->
 
@@ -112,18 +112,18 @@ There is also a tibble containing episode specific information such as
 ``` r
 friends_info
 #> # A tibble: 236 x 8
-#>    season episode title directed_by written_by air_date   us_views_millio…
-#>     <int>   <int> <chr> <chr>       <chr>      <date>                <dbl>
-#>  1      1       1 The … James Burr… David Cra… 1994-09-22             21.5
-#>  2      1       2 The … James Burr… David Cra… 1994-09-29             20.2
-#>  3      1       3 The … James Burr… Jeffrey A… 1994-10-06             19.5
-#>  4      1       4 The … James Burr… Alexa Jun… 1994-10-13             19.7
-#>  5      1       5 The … Pamela Fry… Jeff Gree… 1994-10-20             18.6
-#>  6      1       6 The … Arlene San… Adam Chas… 1994-10-27             18.2
-#>  7      1       7 The … James Burr… Jeffrey A… 1994-11-03             23.5
-#>  8      1       8 The … James Burr… Marta Kau… 1994-11-10             21.1
-#>  9      1       9 The … James Burr… Jeff Gree… 1994-11-17             23.1
-#> 10      1      10 The … Peter Bone… Adam Chas… 1994-12-15             19.9
+#>    season episode title     directed_by  written_by  air_date   us_views_millio…
+#>     <int>   <int> <chr>     <chr>        <chr>       <date>                <dbl>
+#>  1      1       1 The Pilot James Burro… David Cran… 1994-09-22             21.5
+#>  2      1       2 The One … James Burro… David Cran… 1994-09-29             20.2
+#>  3      1       3 The One … James Burro… Jeffrey As… 1994-10-06             19.5
+#>  4      1       4 The One … James Burro… Alexa Junge 1994-10-13             19.7
+#>  5      1       5 The One … Pamela Frym… Jeff Green… 1994-10-20             18.6
+#>  6      1       6 The One … Arlene Sanf… Adam Chase… 1994-10-27             18.2
+#>  7      1       7 The One … James Burro… Jeffrey As… 1994-11-03             23.5
+#>  8      1       8 The One … James Burro… Marta Kauf… 1994-11-10             21.1
+#>  9      1       9 The One … James Burro… Jeff Green… 1994-11-17             23.1
+#> 10      1      10 The One … Peter Bonerz Adam Chase… 1994-12-15             19.9
 #> # … with 226 more rows, and 1 more variable: imdb_rating <dbl>
 ```
 
