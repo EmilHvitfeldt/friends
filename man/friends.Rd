@@ -5,7 +5,8 @@
 \alias{friends}
 \title{The transcript of Friends}
 \format{
-A \link[tibble:tibble-package]{tibble} with 67,373 rows and 5 variables:
+A \link[tibble:tibble-package]{tibble} with 67359 rows and
+6)` variables:
 \code{text}, \code{speaker}, \code{season}, \code{episode},
 \code{scene} and \code{utterance}.
 }

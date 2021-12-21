@@ -5,7 +5,8 @@
 \alias{friends_emotions}
 \title{Emotions for transcript of Friends}
 \format{
-A \link[tibble:tibble-package]{tibble} with 12,606 rows and 5 variables:
+A \link[tibble:tibble-package]{tibble} with 12606
+rows an5)` variables:
 \code{season}, \code{episode}, \code{scene}, \code{utterance} and
 \code{entities}.
 }

@@ -5,7 +5,8 @@
 \alias{friends_info}
 \title{Episode Information}
 \format{
-A \link[tibble:tibble-package]{tibble} with 236 rows and 8 variables:
+A \link[tibble:tibble-package]{tibble} with 236 rows
+an8)` variables:
 \code{season}, \code{episode}, \code{title}, \code{directed_by},
 \code{written_by}, \code{air_date}, \code{us_views_millions} and
 \code{imdb_rating}.

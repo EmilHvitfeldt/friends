@@ -6,7 +6,8 @@
 #'
 #' @source \url{https://github.com/emorynlp/character-mining}
 #'
-#' @format A [tibble][tibble::tibble-package] with 67,373 rows and 5 variables:
+#' @format A [tibble][tibble::tibble-package] with `r nrow(friends)` rows and
+#'   `r ncol(friends)` variables:
 #' \code{text}, \code{speaker}, \code{season}, \code{episode},
 #' \code{scene} and \code{utterance}.
 "friends"
@@ -18,7 +19,8 @@
 #'
 #' @source \url{https://github.com/emorynlp/character-mining}
 #'
-#' @format A [tibble][tibble::tibble-package] with 10,557 rows and 5 variables:
+#' @format A [tibble][tibble::tibble-package] with `r nrow(friends_entities)`
+#'   rows and `r ncol(friends_entities)` variables:
 #' \code{season}, \code{episode}, \code{scene}, \code{utterance} and
 #' \code{entities}.
 "friends_entities"
@@ -31,7 +33,8 @@
 #' @source \url{https://github.com/emorynlp/character-mining}
 #' @source \url{https://github.com/emorynlp/emotion-detection}
 #'
-#' @format A [tibble][tibble::tibble-package] with 12,606 rows and 5 variables:
+#' @format A [tibble][tibble::tibble-package] with `r nrow(friends_emotions)`
+#'   rows and `r ncol(friends_emotions)` variables:
 #' \code{season}, \code{episode}, \code{scene}, \code{utterance} and
 #' \code{entities}.
 "friends_emotions"
@@ -45,11 +48,9 @@
 #' @source \url{https://en.wikipedia.org/wiki/Friends}
 #' @source \url{https://www.imdb.com/title/tt0108778/}
 #'
-#' @format A [tibble][tibble::tibble-package] with 236 rows and 8 variables:
+#' @format A [tibble][tibble::tibble-package] with `r nrow(friends_info)` rows
+#'   and `r ncol(friends_info)` variables:
 #' \code{season}, \code{episode}, \code{title}, \code{directed_by},
 #' \code{written_by}, \code{air_date}, \code{us_views_millions} and
 #' \code{imdb_rating}.
 "friends_info"
-
-
-

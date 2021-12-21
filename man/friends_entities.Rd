@@ -5,7 +5,8 @@
 \alias{friends_entities}
 \title{Character Entities for transcript of Friends}
 \format{
-A \link[tibble:tibble-package]{tibble} with 10,557 rows and 5 variables:
+A \link[tibble:tibble-package]{tibble} with 10557
+rows an5)` variables:
 \code{season}, \code{episode}, \code{scene}, \code{utterance} and
 \code{entities}.
 }
