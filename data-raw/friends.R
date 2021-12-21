@@ -52,6 +52,8 @@ friends <- friends_raw %>%
   mutate(across(c("season", "episode", "scene", "utterance"), parse_number)) %>%
   mutate(across(c("season", "episode", "scene", "utterance"), as.integer)) %>%
   select(-transcript_with_note) %>%
-  select(text, speaker, season, episode, scene, utterance)
+  select(text, speaker, season, episode, scene, utterance) %>%
+  filter(!(season == 4 & episode == 21 & scene == 16)) %>%
+  mutate(scene = if_else(season == 4 & episode == 21 & scene > 16, scene - 1L, scene))
 
 usethis::use_data(friends, overwrite = TRUE)
